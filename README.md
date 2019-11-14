@@ -1,7 +1,7 @@
 # Php Salesforce Rest Api
 
-Forked from:
-```Bijesh Shrestha``` ```bjsmasth``` ```bjsmasth@gmail.com``` ```bjsmasth``` ```php rest api```
+Originally forked from: https://github.com/Cleeng/php-salesforce-rest-api
+which was forked from: https://github.com/bjsmasth/php-salesforce-rest-api
 
 ## Install
 
