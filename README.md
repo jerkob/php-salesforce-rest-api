@@ -106,9 +106,9 @@ Delete
     $crud->delete('Account', $id);
 
 ```
-Delete
+Describe
 
 ```bash
-    $crud->delete('Account', $id);
+    $crud->describe('Account');
 
 ```
