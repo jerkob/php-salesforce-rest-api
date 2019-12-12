@@ -222,4 +222,24 @@ class CRUD
 
         return true;
     }
+    
+    public function describe($object)
+    {
+        $url = "{$this->instanceUrl}/services/data/{$this->apiVersion}/sobjects/{$object}/describe";
+
+        try {
+            $client = new Client();
+            $request = $client->request('GET', $url, [
+                'headers' => [
+					'Authorization' => "OAuth {$this->accessToken}",
+					'Content-type' => 'application/json'
+                ]
+            ]);
+        } catch (ClientException $e) {
+            throw SalesforceException::fromClientException($e);
+		}
+
+		$response = json_decode($request->getBody(), true);
+        return $response;
+    }
 }
