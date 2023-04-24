@@ -3,6 +3,12 @@
 Originally forked from: https://github.com/Cleeng/php-salesforce-rest-api
 which was forked from: https://github.com/bjsmasth/php-salesforce-rest-api
 
+## Changelog
+
+Guzzle 7 and PHP >=7.2 are required starting with version 0.7.
+
+Versions 0.6 and below require Guzzle 6 and PHP >=5.6.
+
 ## Install
 
 Via Composer
